@@ -3,7 +3,7 @@
 		
 	AREA fonte, data, readonly
 		
-source dcb "Esta é a string de origem",0
+source dcb "Esta Ã© a string de origem",0
 
 	AREA destino, data, readwrite
 	
@@ -40,19 +40,10 @@ AMERICANA
 
 	SUB R2, #1
 	LDRB R4, [R0, R2]
-	STRB R4, [R1]
+	STRB R4, [R1], #1
 	SUBS R3, #1
 	BNE AMERICANA
 	
 	
 HERE B HERE
 	
-	
-	
-	
-	
-	
-july
-	
-	
-
